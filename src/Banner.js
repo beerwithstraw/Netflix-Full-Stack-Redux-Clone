@@ -30,15 +30,16 @@ function Banner() {
             backgroundSize: "cover",
             backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
             backgroundPosition: "center center",
+            marginTop: 0,
         }}>
             <div className="banner__contents">
-                <h1 className="banner__title">Movie Name</h1>
+                <h1 className="banner__title">{movie?.title || movie?.name || movie?.original_name}</h1>
                 <div className="banner__buttons">
                     <button className="banner__button">Play</button>
                     <button className="banner__button">My List</button>
                 </div>
                 <h1 className="banner__description">
-                    {truncate(`This is the description of the movie in the banner`, 200)}
+                    {truncate(movie?.overview, 300)}
                 </h1>
             </div>
 
