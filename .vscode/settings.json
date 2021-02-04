@@ -1,0 +1,18 @@
+{
+    "formattingToggle.affects": [
+
+        "formatOnPaste",
+        "formatOnSave",
+        "formatOnType"
+    ],
+    "emmet.excludeLanguages": [
+
+
+        "markdown"
+    ],
+    
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+    }
+
+}
