@@ -49,8 +49,9 @@
     margin-right: auto;
     text-align: center;
     z-index: 1;
-    width: 100%;
     color: #fff;
+    left: 0;
+    right: 0;
 }
 
 .loginScreen__body > h1 {
